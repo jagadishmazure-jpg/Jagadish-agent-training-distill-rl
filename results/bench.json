@@ -1,0 +1,37 @@
+{
+  "machine": {
+    "python": "3.13.5",
+    "torch": "2.5.1+cpu",
+    "processor": "x86_64",
+    "cpu_threads_used": 1
+  },
+  "distill_latency": {
+    "teacher": {
+      "p50_us": 2647.8,
+      "p95_us": 3161.6,
+      "n": 900
+    },
+    "student": {
+      "p50_us": 222.1,
+      "p95_us": 282.3,
+      "n": 900
+    }
+  },
+  "quant": {
+    "fp32_acc": 0.999,
+    "int8_acc": 0.999,
+    "fp32_bytes": 9457992,
+    "int8_bytes": 2371378,
+    "max_logit_gap": 0.4583,
+    "fp32_latency": {
+      "p50_us": 324.5,
+      "p95_us": 387.8,
+      "n": 900
+    },
+    "int8_latency": {
+      "p50_us": 153.3,
+      "p95_us": 181.5,
+      "n": 900
+    }
+  }
+}
